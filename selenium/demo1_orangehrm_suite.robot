@@ -22,4 +22,9 @@ TC2
     Input Password    id=txtPassword    admin123
     Click Element   id=btnLogin
     Click Element    xpath=//*[@id="menu_pim_viewMyDetails"]/b
-    Click Element    locator
+    Click Element    link=Emergency Contacts
+    Click Element    id=btnAddContact
+    Input Text    id=emgcontacts_name    sat
+    Input Text    id=emgcontacts_relationship    brother
+    Input Text    id=emgcontacts_homePhone    78988
+    Click Element    id=btnSaveEContact
