@@ -18,3 +18,10 @@ TC2
     Remove File    E:${/}L&T${/}Temp${/}new${/}fa.txt
     Remove File    E:${/}L&T${/}Temp${/}new${/}f.txt
     Remove Directory     E:${/}L&T${/}Temp${/}rush
+    
+TC3
+    Create Directory    ${EXECDIR}${/}my_folder
+    
+TC4
+    Create Directory    ${EXECDIR}${/}my_folder
+    Create File    ${EXECDIR}${/}my_folder${/}test.txt
