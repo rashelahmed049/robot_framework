@@ -13,3 +13,5 @@ TC1
     Input Text    input_username    admin
     Input Text    input_password    admin123
     Click Element    id=input_go
+    Element Should Contain    xpath=//div[contains(text(),'Access')]   Access denied for user
+    [Teardown]      Close Browser

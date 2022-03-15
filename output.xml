@@ -1,63 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.9.7 on win32)" generated="20220315 14:19:20.765" rpa="false" schemaversion="2">
-<suite id="s1" name="Demp4 Multiple Tabs Suite" source="C:\Users\dell\PycharmProjects\robot_framework\selenium\demp4_multiple_tabs_suite.robot">
+<robot generator="Robot 4.1.3 (Python 3.9.7 on win32)" generated="20220315 15:40:31.024" rpa="false" schemaversion="2">
+<suite id="s1" name="Demo 6 Redbus Suite" source="C:\Users\dell\PycharmProjects\robot_framework\selenium\demo_6_redbus_suite.robot">
 <test id="s1-t1" name="TC1">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>executable_path=${EXECDIR}${/}driver${/}chromedriver.exe</arg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220315 14:19:21.215" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<status status="PASS" starttime="20220315 14:19:21.215" endtime="20220315 14:19:30.054"/>
+<msg timestamp="20220315 15:40:31.449" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20220315 15:40:31.447" endtime="20220315 15:40:36.438"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220315 14:19:30.054" endtime="20220315 14:19:30.186"/>
+<status status="PASS" starttime="20220315 15:40:36.438" endtime="20220315 15:40:36.590"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
 <arg>30s</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" starttime="20220315 14:19:30.186" endtime="20220315 14:19:30.219"/>
+<status status="PASS" starttime="20220315 15:40:36.590" endtime="20220315 15:40:36.615"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
-<arg>https://db4free.net/</arg>
+<arg>https://redbus.in</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220315 14:19:30.219" level="INFO">Opening url 'https://db4free.net/'</msg>
-<status status="PASS" starttime="20220315 14:19:30.219" endtime="20220315 14:19:40.497"/>
+<msg timestamp="20220315 15:40:36.616" level="INFO">Opening url 'https://redbus.in'</msg>
+<status status="PASS" starttime="20220315 15:40:36.615" endtime="20220315 15:41:18.266"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>partial link=phpMyAdmin »</arg>
+<arg>id=i-icon-profile</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220315 14:19:40.498" level="INFO">Clicking element 'partial link=phpMyAdmin »'.</msg>
-<status status="PASS" starttime="20220315 14:19:40.497" endtime="20220315 14:19:40.603"/>
-</kw>
-<kw name="Switch Window" library="SeleniumLibrary">
-<arg>phpMyAdmin</arg>
-<doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" starttime="20220315 14:19:40.603" endtime="20220315 14:19:44.446"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>input_username</arg>
-<arg>admin</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220315 14:19:44.447" level="INFO">Typing text 'admin' into text field 'input_username'.</msg>
-<status status="PASS" starttime="20220315 14:19:44.447" endtime="20220315 14:19:44.578"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>input_password</arg>
-<arg>admin123</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220315 14:19:44.579" level="INFO">Typing text 'admin123' into text field 'input_password'.</msg>
-<status status="PASS" starttime="20220315 14:19:44.578" endtime="20220315 14:19:44.690"/>
+<msg timestamp="20220315 15:41:18.267" level="INFO">Clicking element 'id=i-icon-profile'.</msg>
+<status status="PASS" starttime="20220315 15:41:18.267" endtime="20220315 15:41:18.337"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>id=input_go</arg>
+<arg>id=signInLink</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220315 14:19:44.691" level="INFO">Clicking element 'id=input_go'.</msg>
-<status status="PASS" starttime="20220315 14:19:44.691" endtime="20220315 14:19:45.442"/>
+<msg timestamp="20220315 15:41:18.339" level="INFO">Clicking element 'id=signInLink'.</msg>
+<status status="PASS" starttime="20220315 15:41:18.339" endtime="20220315 15:41:18.423"/>
 </kw>
-<status status="PASS" starttime="20220315 14:19:21.214" endtime="20220315 14:19:45.447"/>
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>xpath=//iframe[@class='modalIframe']</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20220315 15:41:18.423" level="INFO">Selecting frame 'xpath=//iframe[@class='modalIframe']'.</msg>
+<status status="PASS" starttime="20220315 15:41:18.423" endtime="20220315 15:41:25.624"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=mobileNoInp</arg>
+<arg>78458</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220315 15:41:25.626" level="INFO">Typing text '78458' into text field 'id=mobileNoInp'.</msg>
+<status status="PASS" starttime="20220315 15:41:25.625" endtime="20220315 15:41:25.895"/>
+</kw>
+<status status="PASS" starttime="20220315 15:40:31.447" endtime="20220315 15:41:25.898"/>
 </test>
-<status status="PASS" starttime="20220315 14:19:20.768" endtime="20220315 14:19:45.448"/>
+<status status="PASS" starttime="20220315 15:40:31.026" endtime="20220315 15:41:25.902"/>
 </suite>
 <statistics>
 <total>
@@ -66,7 +60,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Demp4 Multiple Tabs Suite">Demp4 Multiple Tabs Suite</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Demo 6 Redbus Suite">Demo 6 Redbus Suite</stat>
 </suite>
 </statistics>
 <errors>
