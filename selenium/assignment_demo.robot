@@ -16,3 +16,7 @@ TC1
     Select From List By Label    xpath=//select[@data-sc-field-name='employees']     10 - 99
     Click Element    xpath=//input[@type='submit']
 
+    @{label}  Get Selected List Label    xpath=//input[@data-sc-field-names='employees'
+    Log To Console    ${label}
+    [Teardown]  Close Browser
+
