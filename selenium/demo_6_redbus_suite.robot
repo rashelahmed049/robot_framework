@@ -13,3 +13,4 @@ TC1
     Select Frame    xpath=//iframe[@class='modalIframe']
     Input Text    id=mobileNoInp    78458
     Unselect Frame
+    [Teardown]  Close Browser
