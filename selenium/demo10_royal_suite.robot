@@ -7,7 +7,7 @@ Test Teardown       Close Browser
 *** Test Cases ***
 TC1 Sign Up
     Set Selenium Implicit Wait    20s
-    Set Selenium Speed    1s
+    #Set Selenium Speed    1s
     Open Browser    browser=chrome     executable_path=${EXECDIR}${/}driver${/}chromedriver.exe
     Maximize Browser Window
     Set Selenium Implicit Wait    20s
@@ -27,11 +27,14 @@ TC1 Sign Up
     Scroll Element Into View    xpath=//span[contains(text(),'India')]
     Click Element    xpath=(//span[contains(text(),'India')])[2]
     Input Text    xpath=//input[@data-placeholder='Email address']    lt@gmail.com
+
     Click Element    xpath=//span[contains(text(),'Select')]
     Scroll Element Into View    xpath=//span[contains(text(),'What')]
     Click Element    xpath=//span[contains(text(),'What')]
     Input Text    xpath=//input[@data-placeholder='Answer']    Little Flower School
     Click Element    xpath=//span[@class='mat-checkbox-inner-container mat-checkbox-inner-container-no-side-margin']
     Click Element    xpath=//button[contains(text(),'Done')]
+
+    Element Text Should Be    xpath=//span(contains(text(),'Password')]    Password is required.
 
 
