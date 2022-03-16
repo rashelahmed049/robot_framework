@@ -17,3 +17,4 @@ TC1 Sign Up
     Click Element    xpath=//span[contains(text(),'April')]
     Click Element    xpath=//span[text()='Day']
     Click Element    xpath=//span[contains(text(),'4')]
+    Input Text    id=mat-input-3    1992
