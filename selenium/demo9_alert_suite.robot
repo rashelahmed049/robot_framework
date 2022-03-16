@@ -8,7 +8,7 @@ TC1
     Set Selenium Implicit Wait    30s
     Go To     url=https://netbanking.hdfcbank.com/netbanking/IpinResetUsingOTP.htm
     Click Element    xpath=//img[@alt='Go']
-    ${alert}    Handle Alert    timeout=50s
+    ${alert}    Handle Alert   action=ACCEPT    timeout=50s
     Log To Console    ${alert}
 
 TC2
