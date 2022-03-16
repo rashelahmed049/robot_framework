@@ -1,5 +1,6 @@
 *** Settings ***
 Library     SeleniumLibrary
+Test Teardown   Close Browser
 *** Test Cases ***
 TC1
     Open Browser    executable_path=${EXECDIR}${/}driver${/}chromedriver.exe    browser=chrome
@@ -16,7 +17,7 @@ TC2
     Set Selenium Implicit Wait    30s
     Go To    https://nasscom.in/nasscom-membership
     Click Element    id=edit-submitted-contact-person-for-nasscom-email-id-cp
-    ${alert}    Handle Alert    timeout=50s
+    ${alert}    Handle Alert    action=Accept   timeout=50s
     Log To Console    ${alert}
 
 
