@@ -17,7 +17,7 @@ TC2
     Set Selenium Implicit Wait    30s
     Go To    https://nasscom.in/nasscom-membership
     Click Element    id=edit-submitted-contact-person-for-nasscom-email-id-cp
-    ${alert}    Handle Alert    action=Accept   timeout=50s
+    ${alert}    Handle Alert    action=ACCEPT   timeout=50s
     Log To Console    ${alert}
 
 
