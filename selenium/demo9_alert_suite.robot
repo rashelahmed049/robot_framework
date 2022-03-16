@@ -19,5 +19,5 @@ TC2
     Click Element    id=edit-submitted-contact-person-for-nasscom-email-id-cp
     ${alert}    Handle Alert    action=ACCEPT   timeout=50s
     Log To Console    ${alert}
-
+    Should Be Equal    ${alert}    Please enter amount in digit and greater than zero.
 

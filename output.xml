@@ -1,56 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.9.7 on win32)" generated="20220316 10:35:30.712" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.3 (Python 3.9.7 on win32)" generated="20220316 10:46:11.389" rpa="false" schemaversion="2">
 <suite id="s1" name="Demo9 Alert Suite" source="C:\Users\dell\PycharmProjects\robot_framework\selenium\demo9_alert_suite.robot">
 <test id="s1-t1" name="TC2">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>executable_path=${EXECDIR}${/}driver${/}chromedriver.exe</arg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220316 10:35:31.017" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<status status="PASS" starttime="20220316 10:35:31.017" endtime="20220316 10:35:34.912"/>
+<msg timestamp="20220316 10:46:11.690" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20220316 10:46:11.690" endtime="20220316 10:46:16.030"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220316 10:35:34.928" endtime="20220316 10:35:35.109"/>
+<status status="PASS" starttime="20220316 10:46:16.033" endtime="20220316 10:46:16.168"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
 <arg>30s</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" starttime="20220316 10:35:35.110" endtime="20220316 10:35:35.113"/>
+<status status="PASS" starttime="20220316 10:46:16.178" endtime="20220316 10:46:16.182"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>https://nasscom.in/nasscom-membership</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220316 10:35:35.115" level="INFO">Opening url 'https://nasscom.in/nasscom-membership'</msg>
-<status status="PASS" starttime="20220316 10:35:35.114" endtime="20220316 10:35:40.939"/>
+<msg timestamp="20220316 10:46:16.197" level="INFO">Opening url 'https://nasscom.in/nasscom-membership'</msg>
+<status status="PASS" starttime="20220316 10:46:16.197" endtime="20220316 10:46:22.031"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>id=edit-submitted-contact-person-for-nasscom-email-id-cp</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220316 10:35:40.939" level="INFO">Clicking element 'id=edit-submitted-contact-person-for-nasscom-email-id-cp'.</msg>
-<status status="PASS" starttime="20220316 10:35:40.939" endtime="20220316 10:35:41.025"/>
+<msg timestamp="20220316 10:46:22.031" level="INFO">Clicking element 'id=edit-submitted-contact-person-for-nasscom-email-id-cp'.</msg>
+<status status="PASS" starttime="20220316 10:46:22.031" endtime="20220316 10:46:22.109"/>
 </kw>
 <kw name="Handle Alert" library="SeleniumLibrary">
 <var>${alert}</var>
 <arg>action=ACCEPT</arg>
 <arg>timeout=50s</arg>
 <doc>Handles the current alert and returns its message.</doc>
-<msg timestamp="20220316 10:35:41.026" level="INFO">HANDLE::&lt;class 'datetime.timedelta'&gt;::0:00:50</msg>
-<msg timestamp="20220316 10:35:41.032" level="INFO">${alert} = Please enter amount in digit and greater than zero.</msg>
-<status status="PASS" starttime="20220316 10:35:41.026" endtime="20220316 10:35:41.032"/>
+<msg timestamp="20220316 10:46:22.110" level="INFO">HANDLE::&lt;class 'datetime.timedelta'&gt;::0:00:50</msg>
+<msg timestamp="20220316 10:46:22.118" level="INFO">${alert} = Please enter amount in digit and greater than zero.</msg>
+<status status="PASS" starttime="20220316 10:46:22.109" endtime="20220316 10:46:22.118"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${alert}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220316 10:35:41.032" endtime="20220316 10:35:41.033"/>
+<status status="PASS" starttime="20220316 10:46:22.118" endtime="20220316 10:46:22.118"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${alert}</arg>
+<arg>Please enter amount in digit and greater than zero.</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20220316 10:46:22.118" endtime="20220316 10:46:22.118"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220316 10:35:41.034" endtime="20220316 10:35:43.198"/>
+<status status="PASS" starttime="20220316 10:46:22.118" endtime="20220316 10:46:24.338"/>
 </kw>
-<status status="PASS" starttime="20220316 10:35:31.017" endtime="20220316 10:35:43.199"/>
+<status status="PASS" starttime="20220316 10:46:11.690" endtime="20220316 10:46:24.338"/>
 </test>
-<status status="PASS" starttime="20220316 10:35:30.714" endtime="20220316 10:35:43.199"/>
+<status status="PASS" starttime="20220316 10:46:11.398" endtime="20220316 10:46:24.338"/>
 </suite>
 <statistics>
 <total>
