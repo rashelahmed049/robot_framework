@@ -13,6 +13,7 @@ TC1
     Input Text    id=edit-field-address-line-1-und-0-value    20Chennai
     Select From List By Label    id=edit-field-state-member-und     Tamil Nadu
     Select From List By Label    id=edit-field-city-membership-und  Chennai
+    Choose File    edit-field-memorandum-article-of-asso-und-0-upload    E:${/}Tezpur University${/}mfcs${/}chapter1.pdf
     Click Element    id=edit-field-mode-of-payment-und-1
     Click Element    id=edit-field-code-of-conduct-und-0
     Click Element    id=edit-preview
