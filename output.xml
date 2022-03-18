@@ -1,96 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.9.7 on win32)" generated="20220316 17:35:16.791" rpa="false" schemaversion="2">
-<suite id="s1" name="Demo5 Suite" source="C:\Users\dell\PycharmProjects\robot_framework\robot_suite\demo5_suite.robot">
-<test id="s1-t1" name="TC4">
-<kw name="Create List" library="BuiltIn">
-<var>@{fruits}</var>
-<arg>apple</arg>
-<arg>banana</arg>
-<arg>mango</arg>
-<doc>Returns a list containing given items.</doc>
-<msg timestamp="20220316 17:35:16.832" level="INFO">@{fruits} = [ apple | banana | mango ]</msg>
-<status status="PASS" starttime="20220316 17:35:16.832" endtime="20220316 17:35:16.832"/>
+<robot generator="Robot 4.1.3 (Python 3.9.7 on win32)" generated="20220318 16:47:51.038" rpa="false" schemaversion="2">
+<suite id="s1" name="Demo14 Autoit Suite" source="C:\Users\dell\PycharmProjects\robot_framework\selenium\demo14_autoit_suite.robot">
+<test id="s1-t1" name="TC1">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>executable_path=${EXECDIR}${/}driver${/}chromedriver.exe</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220318 16:47:55.760" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20220318 16:47:55.754" endtime="20220318 16:47:59.370"/>
 </kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${fruits}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220316 17:35:16.832" endtime="20220316 17:35:16.841"/>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220318 16:47:59.371" endtime="20220318 16:47:59.507"/>
 </kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${fruits}[2]</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220316 17:35:16.841" endtime="20220316 17:35:16.841"/>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>30s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220318 16:47:59.509" endtime="20220318 16:47:59.514"/>
 </kw>
-<kw name="Remove Values From List" library="Collections">
-<arg>${fruits}</arg>
-<arg>mango</arg>
-<doc>Removes all occurrences of given ``values`` from ``list``.</doc>
-<status status="PASS" starttime="20220316 17:35:16.841" endtime="20220316 17:35:16.841"/>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.ilovepdf.com/pdf_to_word</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220318 16:47:59.517" level="INFO">Opening url 'https://www.ilovepdf.com/pdf_to_word'</msg>
+<status status="PASS" starttime="20220318 16:47:59.516" endtime="20220318 16:48:15.733"/>
 </kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${fruits}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220316 17:35:16.844" endtime="20220316 17:35:16.845"/>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//span[text()='Select PDF file']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220318 16:48:15.733" level="INFO">Clicking element 'xpath=//span[text()='Select PDF file']'.</msg>
+<status status="PASS" starttime="20220318 16:48:15.733" endtime="20220318 16:48:16.080"/>
 </kw>
-<kw name="Append To List" library="Collections">
-<arg>${fruits}</arg>
-<arg>orange</arg>
-<doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" starttime="20220316 17:35:16.845" endtime="20220316 17:35:16.845"/>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220318 16:48:17.090" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220318 16:48:16.085" endtime="20220318 16:48:17.090"/>
 </kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${fruits}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220316 17:35:16.845" endtime="20220316 17:35:16.845"/>
+<kw name="Control Focus" library="AutoItLibrary">
+<arg>Open</arg>
+<arg>${EMPTY}</arg>
+<arg>Edit1</arg>
+<doc>method ControlFocus</doc>
+<status status="PASS" starttime="20220318 16:48:17.091" endtime="20220318 16:48:17.406"/>
 </kw>
-<kw name="Insert Into List" library="Collections">
-<arg>${fruits}</arg>
-<arg>2</arg>
-<arg>strawberry</arg>
-<doc>Inserts ``value`` into ``list`` to the position specified with ``index``.</doc>
-<status status="PASS" starttime="20220316 17:35:16.845" endtime="20220316 17:35:16.845"/>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220318 16:48:18.419" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220318 16:48:17.410" endtime="20220318 16:48:18.419"/>
 </kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${fruits}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220316 17:35:16.845" endtime="20220316 17:35:16.845"/>
+<kw name="Control Set Text" library="AutoItLibrary">
+<arg>Open</arg>
+<arg>${EMPTY}</arg>
+<arg>Edit1</arg>
+<arg>E:${/}Tezpur University${/}MTech_IT_2017.pdf</arg>
+<doc>method ControlSetText</doc>
+<status status="PASS" starttime="20220318 16:48:18.421" endtime="20220318 16:48:19.327"/>
 </kw>
-<status status="PASS" starttime="20220316 17:35:16.832" endtime="20220316 17:35:16.845"/>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220318 16:48:20.338" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220318 16:48:19.334" endtime="20220318 16:48:20.338"/>
+</kw>
+<kw name="Control Click" library="AutoItLibrary">
+<arg>Open</arg>
+<arg>${EMPTY}</arg>
+<arg>Button1</arg>
+<doc>method ControlClick</doc>
+<status status="PASS" starttime="20220318 16:48:20.341" endtime="20220318 16:48:20.354"/>
+</kw>
+<status status="PASS" starttime="20220318 16:47:55.754" endtime="20220318 16:48:20.356"/>
 </test>
-<test id="s1-t2" name="TC4">
-<kw name="Create Dictionary" library="BuiltIn">
-<var>${emp_dic}</var>
-<arg>empname=Rasel</arg>
-<arg>companyname=LT</arg>
-<doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20220316 17:35:16.845" level="INFO">${emp_dic} = {'empname': 'Rasel', 'companyname': 'LT'}</msg>
-<status status="PASS" starttime="20220316 17:35:16.845" endtime="20220316 17:35:16.845"/>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${emp_dic}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220316 17:35:16.845" endtime="20220316 17:35:16.845"/>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${emp_dic}[empname]</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220316 17:35:16.845" endtime="20220316 17:35:16.851"/>
-</kw>
-<status status="PASS" starttime="20220316 17:35:16.845" endtime="20220316 17:35:16.852"/>
-</test>
-<status status="PASS" starttime="20220316 17:35:16.793" endtime="20220316 17:35:16.853"/>
+<status status="PASS" starttime="20220318 16:47:51.044" endtime="20220318 16:48:20.358"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="2" fail="0" skip="0" id="s1" name="Demo5 Suite">Demo5 Suite</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Demo14 Autoit Suite">Demo14 Autoit Suite</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20220316 17:35:16.845" level="WARN">Multiple test cases with name 'TC4' executed in test suite 'Demo5 Suite'.</msg>
 </errors>
 </robot>

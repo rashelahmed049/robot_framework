@@ -1,5 +1,5 @@
 * Settings *
-
+Library      AutoRecorder
 Library     SeleniumLibrary
 
 *** Test Cases ***

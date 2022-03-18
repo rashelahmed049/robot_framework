@@ -37,3 +37,5 @@ TC4
     ${emp_dic}  Create Dictionary    empname=Rasel       companyname=LT
     Log To Console    ${emp_dic}
     Log To Console    ${emp_dic}[empname]
+TC4
+    ${student_dic}  Create Dictionary   student
